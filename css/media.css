@@ -25,7 +25,7 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 601px) and (max-width: 992px) {
   .aboutus p {
     width: 70%;
   }
@@ -84,7 +84,17 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .slide .overlay .content p {
+    display: none;
+  }
+  .slide .overlay .content h2 {
+    font-size: 2.5rem;
+    display: block;
+  }
+  .slide .overlay .content h5 {
+    font-size: 1.5rem;
+  }
   .books {
     height: 4250px;
   }
@@ -92,7 +102,7 @@
     width: 100%;
   }
   .team {
-    height: 2400px;
+    height: 1950px;
   }
   .team .heading p {
     width: 80% !important;
@@ -126,8 +136,37 @@
   }
 }
 @media screen and (max-width: 400px) {
+  .slide .overlay .content h2 {
+    font-size: 2rem;
+    display: block;
+  }
+  .slide .overlay .content h5 {
+    font-size: 1rem;
+  }
   .slide .overlay .content p {
     display: none;
+  }
+  .books {
+    height: 4250px;
+  }
+  .books .container > div {
+    width: 100%;
+  }
+  .team .heading p{
+    width: 100%;
+  }
+  .aboutus p {
+    width: 100% !important;
+  }
+  .aboutus .count ul {
+    flex-direction: column;
+  }
+  .aboutus .count ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  .aboutus .count ul li #counter {
+    font-size: 1.1rem;
   }
   .book-wrapper .img-wrapper {
     width: 100% !important;
@@ -141,5 +180,11 @@
   }
   .book-review table th {
     width: 50% !important;
+  }
+  .team {
+    height: 1850px;
+  }
+  .teamsec > div {
+    width: 100% !important;
   }
 }
