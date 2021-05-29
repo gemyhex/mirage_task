@@ -1,0 +1,145 @@
+@media screen and (max-width: 1400px) {
+  .books {
+    height: 2200px;
+  }
+  .books .container > div {
+    width: 50%;
+  }
+  .team {
+    height: 1550px;
+  }
+  .teamsec {
+    min-height: 1200px;
+  }
+  .teamsec > div {
+    width: 50% !important;
+  }
+  .book-wrapper .img-wrapper {
+    width: 30% !important;
+  }
+  .book-wrapper .img-wrapper img {
+    width: 100% !important;
+  }
+  .book-wrapper .book-details {
+    width: 70% !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .aboutus p {
+    width: 70%;
+  }
+  .slider a {
+    font-size: 2.5rem;
+  }
+  .slide .overlay .content h2 {
+    font-size: 2rem;
+  }
+  .slide .overlay .content h5 {
+    font-size: 1rem;
+  }
+  .slide .overlay .content p {
+    width: 70%;
+  }
+  .books {
+    height: 2200px;
+  }
+  .team {
+    height: 1400px;
+  }
+  .books .container > div {
+    width: 50%;
+  }
+  .teamsec {
+    width: 100% !important;
+    max-height: 1200px;
+  }
+  .teamsec > div {
+    width: 50% !important;
+  }
+  .team .heading p {
+    width: 80% !important;
+  }
+  .aboutus .count ul li {
+    font-size: 1rem;
+  }
+  .aboutus .count ul li #counter {
+    font-size: 1.5rem;
+  }
+
+  .book-wrapper .img-wrapper {
+    width: 35% !important;
+  }
+  .book-wrapper .book-details {
+    width: 65% !important;
+  }
+  .book-wrapper .book-details p {
+    width: 90% !important;
+  }
+  .book-review table {
+    width: 100% !important;
+  }
+  .book-review table th {
+    width: 30% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .books {
+    height: 4250px;
+  }
+  .books .container > div {
+    width: 100%;
+  }
+  .team {
+    height: 2400px;
+  }
+  .team .heading p {
+    width: 80% !important;
+  }
+  .teamsec > div {
+    width: 100% !important;
+  }
+  .aboutus .count ul {
+    flex-direction: column;
+  }
+  .aboutus .count ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  .aboutus .count ul li #counter {
+    font-size: 1.5rem;
+  }
+
+  .book-wrapper .img-wrapper {
+    width: 100% !important;
+  }
+  .book-wrapper .book-details {
+    width: 95% !important;
+    margin-top: 20px;
+  }
+  .book-wrapper .book-details p {
+    width: 90% !important;
+  }
+  .book-review table th {
+    width: 40% !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .slide .overlay .content p {
+    display: none;
+  }
+  .book-wrapper .img-wrapper {
+    width: 100% !important;
+  }
+  .book-wrapper .book-details {
+    width: 100% !important;
+    margin-top: 20px;
+  }
+  .book-wrapper .book-details p {
+    width: 100% !important;
+  }
+  .book-review table th {
+    width: 50% !important;
+  }
+}

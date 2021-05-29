@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+.container {
+  width: 75%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+h3 {
+  text-transform: uppercase;
+  color: #0086df;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-left: 10px;
+}
+h3:before {
+  content: "ــــ";
+  color: #0086df;
+  margin-right: 5px;
+}
+h3:after {
+  content: "ــــ";
+  color: #0086df;
+  margin-left: 5px;
+}
+
+.header {
+  width: 30%;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  z-index: 999;
+}
+.header img {
+  max-width: 50%;
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin: 0px auto;
+  overflow: hidden;
+}
+.slider a {
+  width: 55px;
+  text-decoration: none;
+  color: #fff;
+  position: absolute;
+  z-index: 9999;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+.slider a:hover {
+  cursor: pointer;
+  color: #555;
+}
+.slider a.left {
+  top: 50%;
+  left: 1%;
+}
+.slider a.right {
+  top: 50%;
+  right: 1%;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+  transition: 1s;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+.slide.active {
+  display: flex;
+  transition: 1s;
+}
+.slide .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 1s;
+}
+
+.slide .overlay .content {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide .overlay .content h2 {
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  font-size: 5rem;
+  font-weight: bolder;
+}
+.slide .overlay .content h5 {
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.slide .overlay .content h5:before,
+.slide .overlay .content h5:after {
+  content: "ــــــ";
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.slide .overlay .content p {
+  width: 30%;
+  height: fit-content;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.aboutus {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.aboutus h4 {
+  font-size: 1.3rem;
+}
+.aboutus h4 span {
+  color: #0086df;
+}
+.aboutus p {
+  width: 50%;
+  margin: 0 auto;
+  color: rgb(148, 145, 145);
+}
+.aboutus .count {
+  width: 100%;
+  background-color: #0086df;
+  margin-top: 50px;
+}
+.aboutus .count ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutus .count ul li {
+  width: fit-content;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.aboutus .count ul li #counter {
+  font-size: 2.2rem;
+}
+
+.books {
+  width: 100%;
+  min-height: 1100px;
+  text-align: center;
+}
+.books .container {
+  min-height: 1100px;
+}
+.books .container > div {
+  width: 25%;
+  height: 500px;
+  float: left;
+  margin-top: 20px;
+}
+.books .container .img-wrap {
+  width: 90%;
+  height: 90%;
+  margin: 10px auto;
+}
+.books .container .img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+.books .book-item .details a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #0086df;
+}
+.books .book-item a:hover {
+  color: #0086df;
+  transition: 0.5s;
+}
+.books .book-item h4 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin: 0;
+  line-height: 10px;
+}
+
+.books button:hover {
+  background-color: #0086df;
+  cursor: pointer;
+}
+
+.team {
+  width: 100%;
+  min-height: 750px;
+  text-align: center;
+}
+.team .container {
+  min-height: 750px;
+}
+.team .teamsec {
+  width: 75%;
+  margin-top: 50px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.team .heading p {
+  text-transform: capitalize;
+  line-height: 25px;
+  width: 50%;
+  margin: 20px auto;
+  font-size: 1.2rem;
+}
+
+.team .teamsec .col {
+  width: 33%;
+  min-height: 500px;
+  text-align: center;
+  filter: grayscale(100%);
+  float: left;
+}
+
+.team .teamsec .col:hover {
+  filter: none;
+}
+
+.team .teamsec .col img {
+  width: 90%;
+  border: 0.5px solid #adadad;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  border-bottom: 5px solid white;
+}
+
+.team .teamsec .col img:hover {
+  border-bottom: 5px solid #0086df;
+}
+
+.team .teamsec .col p {
+  width: 90%;
+  margin-top: 20px;
+}
+.team .teamsec .col h3 {
+  font-size: 1.1rem;
+  padding: 0;
+}
+
+.foot {
+  width: 100%;
+  max-height: 40px;
+  background: #155fb4;
+  text-align: center;
+}
+
+.foot p {
+  width: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0;
+}
