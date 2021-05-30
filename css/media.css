@@ -1,4 +1,7 @@
 @media screen and (max-width: 1400px) {
+  .header{
+    width: 40%;
+  }
   .books {
     height: 2200px;
   }
@@ -26,6 +29,9 @@
 }
 
 @media screen and (min-width: 601px) and (max-width: 992px) {
+  .header{
+    width: 50%;
+  }
   .aboutus p {
     width: 70%;
   }
@@ -85,6 +91,9 @@
 }
 
 @media screen and (min-width: 401px) and (max-width: 600px) {
+  .header{
+    width: 75%;
+  }
   .slide .overlay .content p {
     display: none;
   }
@@ -120,6 +129,12 @@
   .aboutus .count ul li #counter {
     font-size: 1.5rem;
   }
+  .team .heading p{
+    width: 100%;
+  }
+  .aboutus p {
+    width: 100% !important;
+  }
 
   .book-wrapper .img-wrapper {
     width: 100% !important;
@@ -136,6 +151,9 @@
   }
 }
 @media screen and (max-width: 400px) {
+  .header{
+    width: 100%;
+  }
   .slide .overlay .content h2 {
     font-size: 2rem;
     display: block;
@@ -153,7 +171,7 @@
     width: 100%;
   }
   .team .heading p{
-    width: 100%;
+    width: 100% !important;
   }
   .aboutus p {
     width: 100% !important;
